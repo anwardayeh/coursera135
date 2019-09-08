@@ -1,30 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Our Menu</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        p {
+            text-align: center;
+            padding: 25px;
+        }
+
+        H1 {
+            text-align: center
+        }
+
+        .row {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 100%
+        }
+       
+        section {
+            position: relative;
+            margin: 10px;
+            float: left;
+            background-color: gray;
+            padding: 0px;
+            border: 2px solid black;
+        }
+       
+       
+        h2 {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            margin: 0px;
+            text-align: center;
+            border: 2px solid black;
+            width: 100px;
+            height: 33px;
+            background-color: orangered
+        }
+
+        /* large devices */
+        @media (min-width: 992px) {
+            section {
+                width: 30%
+            }
+        }
+
+
+        /*  med devices */
+        @media (min-width:768px) , (max-width: 991px) {
+
+            #one,
+            #tow {
+                width: 50%
+            }
+
+            #three {
+                width: 98%
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <H1>Our Menu$</H1>
-    <section>
-      <h1>Chicken</h1> 
-      <p>Grill these sweet-spicy legs over indirect heat to keep them
-           succulent and perfectly cooked. Then eat them directly,
-            before guests snap them up.</p> 
-    </section>
-    <section>
-        <h1>Beef</h1>
-        <p>Have a bowl of deliciousness at dinnertime tonight with
-             our Beef Noodle Bowl recipe!Enjoy our Healthy Living
-             noodle bowl with veggies in just 30 minutes..</p>
-    </section>
-    <section>
-        <h1>Sushi</h1>
-        <p>Our How to Roll Sushi cooking video teaches you more than
-             just rolling rice and fish. Use the technique for appetizers,
-              desserts and lunchbox surprises.</p>
-    </section>
+    <H1>Our Menu</H1>
+    <div class="row">
+        <section class="one" ; class="col-lg-4 col-lm-6">
+            <h2 id="h1">Chicken</h2>
+            <p>Grill these sweet-spicy legs over indirect heat to keep them
+                succulent and perfectly cooked. Then eat them directly,
+                before guests snap them up.</p>
+        </section>
+        <section class="tow" ;class="col-lg-4 col-lm-6">
+            <h2 id="h2">Beef</h2>
+            <p>Have a bowl of deliciousness at dinnertime tonight with
+                our Beef Noodle Bowl recipe!Enjoy our Healthy Living
+                noodle bowl with veggies in just 30 minutes..</p>
+        </section>
+        <section class="three" ;class="col-lg-4 col-lm-12">
+            <h2 id="h3">Sushi</h2>
+            <p>Our How to Roll Sushi cooking video teaches you more than
+                just rolling rice and fish. Use the technique for appetizers,
+                desserts and lunchbox surprises.</p>
+        </section>
+    </div>
 </body>
+
 </html>
